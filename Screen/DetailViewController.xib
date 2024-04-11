@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="descriptionTextView" destination="bux-2g-8ol" id="EeY-Rb-ryn"/>
                 <outlet property="imageView" destination="lbp-LB-xNG" id="BO3-AH-I8v"/>
+                <outlet property="loadingView" destination="7aM-Hn-ZBi" id="Hni-TN-TX9"/>
                 <outlet property="nameLabel" destination="wGO-GZ-lt3" id="UdK-8U-rjF"/>
                 <outlet property="statusLabel" destination="YMr-lT-Nre" id="dQn-IW-U6H"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -43,6 +44,9 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTE-tW-xgm">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="279.33333333333331"/>
                                     <subviews>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7aM-Hn-ZBi">
+                                            <rect key="frame" x="73" y="91" width="20" height="20"/>
+                                        </activityIndicatorView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lbp-LB-xNG">
                                             <rect key="frame" x="15" y="0.0" width="137.66666666666666" height="202.33333333333334"/>
                                             <constraints>
@@ -90,8 +94,10 @@
                                         <constraint firstAttribute="bottom" secondItem="lbp-LB-xNG" secondAttribute="bottom" priority="749" constant="20" id="49e-OC-gpR"/>
                                         <constraint firstItem="kxi-rD-xam" firstAttribute="leading" secondItem="diu-Ck-mJf" secondAttribute="leading" id="8lG-2F-1dS"/>
                                         <constraint firstItem="wGO-GZ-lt3" firstAttribute="top" secondItem="lbp-LB-xNG" secondAttribute="top" id="Ag0-FZ-Q2f"/>
+                                        <constraint firstItem="7aM-Hn-ZBi" firstAttribute="centerY" secondItem="lbp-LB-xNG" secondAttribute="centerY" id="BgF-A4-Pa9"/>
                                         <constraint firstAttribute="trailing" secondItem="wGO-GZ-lt3" secondAttribute="trailing" constant="15" id="COZ-kQ-KOZ"/>
                                         <constraint firstItem="diu-Ck-mJf" firstAttribute="top" secondItem="wGO-GZ-lt3" secondAttribute="bottom" constant="8" symbolic="YES" id="Fk0-WP-OPm"/>
+                                        <constraint firstItem="7aM-Hn-ZBi" firstAttribute="centerX" secondItem="lbp-LB-xNG" secondAttribute="centerX" id="I2x-5y-wqO"/>
                                         <constraint firstItem="diu-Ck-mJf" firstAttribute="leading" secondItem="wGO-GZ-lt3" secondAttribute="leading" id="P25-Gy-dH2"/>
                                         <constraint firstItem="YMr-lT-Nre" firstAttribute="leading" secondItem="kxi-rD-xam" secondAttribute="trailing" constant="5" id="RjZ-W8-V6k"/>
                                         <constraint firstItem="lbp-LB-xNG" firstAttribute="leading" secondItem="wTE-tW-xgm" secondAttribute="leading" constant="15" id="Sui-hs-8cB"/>
@@ -160,7 +166,7 @@
     <resources>
         <image name="white-back" width="12" height="22"/>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

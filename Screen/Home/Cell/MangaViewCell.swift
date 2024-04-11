@@ -17,20 +17,14 @@ class MangaViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    
-    override func prepareForReuse() {
-        imageView.image = #imageLiteral(resourceName: "loading-image")
-    }
 
     func config(data: MangaResponse?) {
-        imageView.downloadImage(from: data?.cover)
+//        imageView.downloadImage(from: data?.cover)
         lbName.text = data?.attributes?.title?.en
         let chapterText = "Volume \(castToString(data?.attributes?.lastVolume)) - \(castToString(data?.attributes?.lastChapter))"
-//        ImageCacheLoader().obtainImageWithPath(imagePath: castToString(data?.cover)) { (image) in
-//            // Before assigning the image, check whether the current cell is visible for ensuring that it's right cell
-//            self.imageView.image = image
-//        }
         lbChapter.text = chapterText
+        imageView.kf.indicatorType = .activity
+        imageView.kf.setImage(with: URL(string: castToString(data?.cover)))
     }
     
     func configImage(cover: UIImage) {

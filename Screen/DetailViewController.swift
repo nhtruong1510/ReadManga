@@ -13,6 +13,7 @@ class DetailViewController: BaseViewController {
     @IBOutlet private var statusLabel: UILabel!
     @IBOutlet private var descriptionTextView: UITextView!
     @IBOutlet private var imageView: UIImageView!
+    @IBOutlet private var loadingView: UIActivityIndicatorView!
 
     var mangaResponse: MangaResponse = MangaResponse()
 
@@ -23,14 +24,17 @@ class DetailViewController: BaseViewController {
         super.viewDidLoad()
         fillData()
     }
-
-    private func getData() {
-        viewModel.controller = self
-        viewModel.callApiGetMangaData(id: castToString(mangaResponse.id))
-    }
     
     private func fillData() {
-//        imageView.downloadImage(from: mangaResponse.cover)
+        DispatchQueue.main.async {
+            self.loadingView.isHidden = false
+            self.loadingView.startAnimating()
+        }
+        imageView.downloadImage(from: mangaResponse.cover, completion: { data in
+            self.loadingView.stopAnimating()
+            self.loadingView.isHidden = true
+            self.imageView.image = UIImage(data: data)
+        })
         nameLabel.text = mangaResponse.attributes?.title?.en
         yearLabel.text = castToString(mangaResponse.attributes?.year)
         statusLabel.text = mangaResponse.attributes?.status

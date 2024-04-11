@@ -90,11 +90,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        if indexPath.section == 1 {
-//            return CGSize(width: (collectionView.frame.width - 40)/3, height: 205)
-//        }
-//        return CGSize(width: collectionView.frame.width - 40, height: 40)
         return CGSize(width: (collectionView.frame.width - 40)/3, height: 205)
 
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
 }

@@ -9,10 +9,10 @@ import UIKit
 
 class HomeViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var lbName: UILabel!
-    @IBOutlet weak var lbChapter: UILabel!
-    @IBOutlet weak var lbRating: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet private var lbName: UILabel!
+    @IBOutlet private var lbChapter: UILabel!
+    @IBOutlet private var lbRating: UILabel!
+    @IBOutlet private var imageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,7 +20,6 @@ class HomeViewCell: UICollectionViewCell {
     }
     
     func config(data: MangaResponse?) {
-        imageView.downloadImage(from: data?.cover)
         lbName.text = data?.attributes?.title?.en
         let chapterText = "Volume \(castToString(data?.attributes?.lastVolume)) - \(castToString(data?.attributes?.lastChapter))"
         lbChapter.text = chapterText
