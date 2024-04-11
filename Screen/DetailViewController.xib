@@ -45,7 +45,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="279.33333333333331"/>
                                     <subviews>
                                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7aM-Hn-ZBi">
-                                            <rect key="frame" x="73" y="91" width="20" height="20"/>
+                                            <rect key="frame" x="73.666666666666671" y="91.333333333333343" width="20" height="20"/>
                                         </activityIndicatorView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lbp-LB-xNG">
                                             <rect key="frame" x="15" y="0.0" width="137.66666666666666" height="202.33333333333334"/>
@@ -114,7 +114,7 @@
                                     <rect key="frame" x="0.0" y="279.33333333333331" width="393" height="200"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPn-a5-2o4">
-                                            <rect key="frame" x="19.999999999999993" y="5" width="97.333333333333314" height="24"/>
+                                            <rect key="frame" x="19.999999999999993" y="10" width="97.333333333333314" height="24"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -130,10 +130,9 @@
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="bux-2g-8ol" secondAttribute="bottom" constant="60" id="9qW-hZ-hsb"/>
                                         <constraint firstItem="VPn-a5-2o4" firstAttribute="leading" secondItem="EIN-i4-d0l" secondAttribute="leading" constant="20" id="ATJ-Xb-lOm"/>
-                                        <constraint firstItem="bux-2g-8ol" firstAttribute="top" secondItem="VPn-a5-2o4" secondAttribute="bottom" constant="15" id="Yy1-sK-BzC"/>
+                                        <constraint firstItem="bux-2g-8ol" firstAttribute="top" secondItem="VPn-a5-2o4" secondAttribute="bottom" constant="10" id="Yy1-sK-BzC"/>
                                         <constraint firstAttribute="trailing" secondItem="bux-2g-8ol" secondAttribute="trailing" constant="15" id="ZUp-u6-iyN"/>
-                                        <constraint firstAttribute="height" constant="200" id="dco-zr-WpN"/>
-                                        <constraint firstItem="VPn-a5-2o4" firstAttribute="top" secondItem="EIN-i4-d0l" secondAttribute="top" constant="5" id="hgI-Eq-xHq"/>
+                                        <constraint firstItem="VPn-a5-2o4" firstAttribute="top" secondItem="EIN-i4-d0l" secondAttribute="top" constant="10" id="hgI-Eq-xHq"/>
                                         <constraint firstItem="bux-2g-8ol" firstAttribute="leading" secondItem="EIN-i4-d0l" secondAttribute="leading" constant="15" id="p4x-1d-OjS"/>
                                     </constraints>
                                 </view>

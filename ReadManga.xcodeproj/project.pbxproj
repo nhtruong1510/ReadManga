@@ -84,7 +84,6 @@
 		07AA0EE32BC45B81004CC1B0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0EE22BC45B81004CC1B0 /* UIView+Extension.swift */; };
 		07AA0EE52BC45D5F004CC1B0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0EE42BC45D5F004CC1B0 /* APIService.swift */; };
 		07AA0EE82BC45DB8004CC1B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0EE72BC45DB8004CC1B0 /* Constants.swift */; };
-		07AA0EED2BC4656C004CC1B0 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0EEC2BC4656C004CC1B0 /* Notification+Extension.swift */; };
 		07AA0EEF2BC46837004CC1B0 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0EEE2BC46837004CC1B0 /* BaseResponse.swift */; };
 		07AA0EF12BC470F6004CC1B0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0EF02BC470F6004CC1B0 /* Common.swift */; };
 		07AA0EF72BC471F5004CC1B0 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA0EF52BC471F5004CC1B0 /* HomeViewCell.swift */; };
@@ -174,7 +173,6 @@
 		07AA0EE22BC45B81004CC1B0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		07AA0EE42BC45D5F004CC1B0 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		07AA0EE72BC45DB8004CC1B0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		07AA0EEC2BC4656C004CC1B0 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
 		07AA0EEE2BC46837004CC1B0 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		07AA0EF02BC470F6004CC1B0 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		07AA0EF52BC471F5004CC1B0 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
@@ -458,7 +456,6 @@
 			isa = PBXGroup;
 			children = (
 				07AA0EE22BC45B81004CC1B0 /* UIView+Extension.swift */,
-				07AA0EEC2BC4656C004CC1B0 /* Notification+Extension.swift */,
 				07AA0EFB2BC472E2004CC1B0 /* UITable+Extension.swift */,
 				0785D0CD2BC5842100E164B3 /* UIImage+Extension.swift */,
 				0785D0D82BC58DE600E164B3 /* String+Extension.swift */,
@@ -597,7 +594,6 @@
 				070B111B2BC706E8005F28D0 /* Delegate.swift in Sources */,
 				0785D0DE2BC5AB0E00E164B3 /* DetailViewController.swift in Sources */,
 				070B10EB2BC706E8005F28D0 /* KF.swift in Sources */,
-				07AA0EED2BC4656C004CC1B0 /* Notification+Extension.swift in Sources */,
 				070B111E2BC706E8005F28D0 /* SizeExtensions.swift in Sources */,
 				070B12052BC70F51005F28D0 /* Storage.swift in Sources */,
 				07AA0EE52BC45D5F004CC1B0 /* APIService.swift in Sources */,
